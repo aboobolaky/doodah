@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+  For more information on how to configure your ASP.NET application, please visit
+  http://go.microsoft.com/fwlink/?LinkId=169433
+  -->
+<configuration>
+  <appSettings>
+    <!--Live : ABQIAAAAQSrepPRH_amk-ur6FTgKhBRBNTyB7AQm-5ugrCWFOOABeo9nvxQ82FOxOI1E1uRE2I1LwH6V92IcdA-->
+    <add key="GoogleMapsKey" value="ABQIAAAAQSrepPRH_amk-ur6FTgKhBRBNTyB7AQm-5ugrCWFOOABeo9nvxQ82FOxOI1E1uRE2I1LwH6V92IcdA"/>
+    <add key="EmailAddressFromName" value="LovelyCurtains Ltd"/>
+    <add key="EmailAddressFromEmailAddress" value="butler@lovelycurtains.mu"/>
+    <add key="EmailAddressTo" value="web@lovelycurtains.mu"/>
+    <!--Live : 6LcQwsgSAAAAAFrozcQoA36yepuFYiVavK2LU-HK --> <!--6LfmwcgSAAAAAHlnn0w4gRj7cXnijIwIoGd7nHg5-->
+    <add key="RecaptchaPublicKey" value="6LcQwsgSAAAAAFrozcQoA36yepuFYiVavK2LU-HK"/>
+    <!--Live : 6LcQwsgSAAAAAOC3jQErrkWAR30xQXvHYOpQO9-r  --> <!--6LfmwcgSAAAAABT5hR26wRYq2eriYTunOkO01ByG-->
+    <add key="RecaptchaPrivateKey" value="6LcQwsgSAAAAAOC3jQErrkWAR30xQXvHYOpQO9-r"/>
+  </appSettings>
+  <system.net>
+    <mailSettings>
+      <smtp deliveryMethod="Network" from="butler@lovelycurtains.mu">
+        <network host="mail.lovelycurtains.mu" userName="web@lovelycurtains.mu" password="L0v3lyC"/>
+      </smtp>
+    </mailSettings>
+  </system.net>
+  <system.web>
+ <customErrors mode="On"/>
+
+    <compilation debug="false" targetFramework="4.0"/>
+    <pages controlRenderingCompatibilityVersion="3.5" clientIDMode="AutoID">
+      <controls>
+        <add src="~/usercontrols/Footer.ascx" tagPrefix="LC" tagName="Footer"/>
+        <add src="~/usercontrols/Menu.ascx" tagPrefix="LC" tagName="Menu"/>
+        <add src="~/usercontrols/StarPromo.ascx" tagPrefix="LC" tagName="Promo"/>
+        <add namespace="Artem.Web.UI.Controls" tagPrefix="artem" assembly="Artem.GoogleMap"/>
+        <add namespace="Recaptcha" tagPrefix="recaptcha" assembly="Recaptcha"/>
+      </controls>
+    </pages>
+  </system.web>
+  <system.webServer>
+    <defaultDocument>
+      <files>
+        <add value="index.aspx"/>
+      </files>
+    </defaultDocument>
+  </system.webServer>
+</configuration>

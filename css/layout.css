@@ -1,0 +1,233 @@
+@charset "utf-8";
+/* CSS Document */
+
+.style1 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12.5px;
+	line-height: 13px;
+	font-style: normal;
+	margin: 0px;
+	padding: 0px;
+}
+	    #retake {
+	height: 50px;
+	width: 945px;
+}
+    #container #body #slidecurt {
+	border: 2px solid #666666;
+	margin: 0px;
+	padding: 0px;
+	width: 410px;
+
+}
+
+
+.style2 {
+	font-size: 16px;
+	font-weight: bold;
+	color: #7E003F;
+	line-height: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+	padding: 0px;
+	margin-top: 3px;
+	margin-right: 0px;
+	margin-bottom: 3px;
+	margin-left: 0px;
+}
+.stylelink {
+	font-size: 16px;
+	font-weight: bold;
+	color: #7E003F;
+	line-height: 18px;
+	font-family: Arial, Helvetica, sans-serif;
+	text-decoration: underline;
+	padding: 0px;
+	margin-top: 3px;
+	margin-right: 0px;
+	margin-bottom: 3px;
+	margin-left: 0px;
+}
+.style3 {
+	font-size: 10px;
+	line-height: 1px;
+}
+#container #footer .style3 a {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	text-decoration: none;
+}
+.style4 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12.5px;
+	padding: 0px;
+	line-height: 13px;
+	font-style: normal;
+	color: #7E003F;
+	font-weight: bolder;
+	margin: 0px;
+}
+.style5 {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 14px;
+	padding: 0px;
+	line-height: 14px;
+	font-style: normal;
+	color: #7E003F;
+	font-weight: bolder;
+	margin: 0px;
+}
+
+    
+
+#container {
+	min-height:100%;
+	position:relative;
+	width: 945px;
+	margin-right: auto;
+	margin-left: auto;
+	background-image: url(../images/backpattstartlight2.jpg);
+	background-repeat: repeat;
+	}
+#container #header #anihead {
+	float: right;
+	height: 172px;
+	width: 703px;
+}
+#outline {
+	clear: both;
+	height: 10px;
+	width: 945px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #7e003f;
+	border-top-width: 3px;
+	border-bottom-width: 2px;
+	border-top-style: solid;
+	border-bottom-style: solid;
+	border-top-color: #97be0d;
+	border-bottom-color: #e4368a;
+}
+
+	#header {
+	height: 275px;
+	}
+
+	#body {
+	padding-bottom: 60px;
+	padding-top: 10px;
+	padding-right: 15px;
+	padding-left: 14px;
+	}
+#container #body #vertline {
+	background-color: #666666;
+	width: 2px;
+	margin-right: auto;
+	margin-left: auto;
+	height: 975px;
+}
+
+	#footer {
+	position:absolute;
+	bottom:0;
+	width:100%;
+	height:50px;
+	background-color: #333333;
+	text-align: center;
+	border-top-width: medium;
+	border-top-style: solid;
+	}
+	/* other non-essential CSS */
+	#header p,
+	#header h1 {
+	margin:0;
+	padding:10px 0 0 10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	}
+#container #body img {
+
+}
+
+
+	#footer p {
+	margin:0;
+	padding:10px;
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 12px;
+	color: #FFFFFF;
+	}
+	#container #header #logo {
+	float: left;
+	height: 172px;
+	width: 242px;
+}
+#container #body table2 {
+}
+
+
+
+a img {
+	border-top-style: none;
+	border-right-style: none;
+	border-bottom-style: none;
+	border-left-style: none;
+}
+#container #body .style2 img {
+	border: 2px solid #666666;
+}
+#outline img {
+	border: 2px solid #666666;
+	width: 630px;
+}
+
+#container #body #line {
+	height: 2px;
+	margin: 15px;
+}
+#container #body #linegrey {
+	height: 2px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #666666;
+	margin-top: 25px;
+	margin-bottom: 12px;
+}
+
+#container #body #vertline2 {
+	height: 475px;
+	width: 2px;
+	margin-right: auto;
+	margin-left: auto;
+	background-color: #666666;
+}
+	    #container #body #vertline3 {
+	background-color: #666666;
+	height: 225px;
+	width: 2px;
+	margin-right: auto;
+	margin-left: auto;
+}
+    
+#container #body #slidecurt2 {
+	border: 2px solid #666666;
+	margin: 0px;
+	padding: 0px;
+}
+#logo {
+}
+#logotop {
+	position: absolute;
+	width: 400px;
+	height: 275px;
+	margin: 0px;
+}
+
+#conta {
+	position: absolute;
+	width: 180px;
+	height: 59px;
+	margin-left: 760px;
+	margin-top: 15px;
+}

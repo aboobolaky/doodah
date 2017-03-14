@@ -1,0 +1,279 @@
+body {
+	font-size: 0.625em;
+	margin: 0px;
+}
+
+#header-container{
+	width: 945px;
+	height: 275px;
+	position: absolute;
+	background-image: url(../images/backpattstartlight2.jpg);
+	background-repeat: repeat;
+}
+
+
+#header {
+	height: 275px;
+	margin: 0px;
+	position: absolute;
+	overflow: hidden;
+	width: 945px;
+}
+
+a{
+	color: white;
+}
+
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	color: #F60;
+	padding-left:10px;
+}
+
+#nav {
+	bottom: -3%;
+	/* [disabled]display: none; */
+	right: 42%;
+	position: absolute;
+
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+	z-index: 1000;
+}
+
+#nav li {
+	display: inline-block;
+	height: 60px;
+}
+
+#nav li p {
+	cursor: pointer;
+	opacity: 0.4;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+#nav li p:active {
+	opacity: 1;
+	color:#faba3d;
+}
+
+
+	#nav li p:hover {
+		opacity: 1;
+	
+		-webkit-transition-duration: 1s;
+		-moz-transition-duration: 1s;
+		-o-transition-duration: 1s;
+		-ms-transition-duration: 1s;
+		transition-duration: 1s;
+	}
+#sequence li{
+	height: 100%;
+	position: absolute;
+	top: 0px;
+	width: 100%;
+	left: 0px;
+}
+
+#sequence li * {
+	position: absolute;
+}
+
+#sequence li img{
+	/* [disabled]height: 96%; */
+}
+
+#sequence {
+	display: block;
+	height: 100%;
+	margin: 0;
+	position: absolute;
+	width: 100%;
+	z-index:1;
+	
+	/*backface-visibility prevents graphical glitches when frames are animating*/
+	-webkit-backface-visibility: hidden;
+	-moz-backface-visibility: hidden;
+	-ms-backface-visibility: hidden;
+	-o-backface-visibility: hidden;
+	backface-visibility: hidden;
+}
+
+h2 {
+	color: white;
+	font-family: Arial, Helvetica, sans-serif;
+	font-weight: normal;
+	text-transform: uppercase;
+}
+p {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 30px;
+	color: #FFF;
+	padding-left:10px;
+}
+
+h3 {
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.next,.prev {
+	color: white;
+	cursor: pointer;
+	display: none;
+	font-weight: bold;
+	padding: 10px 15px;
+	position: absolute;
+	top: 50%;
+	z-index: 1000;
+	height: 75px;
+	margin-top: -47.5px;
+}
+
+.pause {
+	bottom: 0;
+	cursor: pointer;
+	position: absolute;
+	z-index: 1000;
+}
+
+.paused {
+	opacity: 0.3;
+}
+
+.prev {
+	left: 1%;
+}
+
+.next {
+	right: 1%;
+}
+
+.prev img, .next img{
+	height: 100%;
+	width: auto;
+}
+
+
+.next,.prev {
+	position: absolute;
+	opacity: 0.6;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+.next:hover,.prev:hover {
+	opacity: 1;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+.title {
+	font-size: 27px;
+	left: 65%;
+	/* [disabled]width: 35%; */
+	opacity: 0;
+	/* [disabled]bottom: 1%; */
+	z-index: 50;
+	top: 3%;
+}
+
+.animate-in .title {
+	left: 50%;
+	opacity: 1;
+
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+.animate-out .title {
+	left: 35%;
+	opacity: 0;
+
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+.subtitle {
+	color: #FFF;
+	font-size: 2em;
+	left: 35%;
+	/* [disabled]width: 35%; */
+	opacity: 0;
+	top: 9%;
+}
+
+.animate-in .subtitle {
+	left: 50%;
+	opacity: 1;
+
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+.animate-out .subtitle {
+	left: 65%;
+	opacity: 0;
+
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}
+
+
+.portrait {
+	left: 50px;
+	top: -10px;
+	opacity: 0;
+	position: relative;
+}
+
+
+.animate-in .portrait {
+	left: 0px;
+	opacity: 1;
+
+	-webkit-transition-duration: 1s;
+	-moz-transition-duration: 1s;
+	-o-transition-duration: 1s;
+	-ms-transition-duration: 1s;
+	transition-duration: 1s;
+}
+
+.animate-out .portrait {
+	left: 50px;
+	opacity: 0;
+
+	-webkit-transition-duration: .5s;
+	-moz-transition-duration: .5s;
+	-o-transition-duration: .5s;
+	-ms-transition-duration: .5s;
+	transition-duration: .5s;
+}

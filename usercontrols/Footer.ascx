@@ -1,0 +1,10 @@
+﻿<%@ Control Language="C#" AutoEventWireup="true" CodeBehind="Footer.ascx.cs" Inherits="LovelyCurtains.Web.usercontrols.Footer" %>
+<div id="footer" class="bg7">
+                <p class="style1" id="bottom-menu" style="text-align: center;">
+                    <a href="/">Home</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <a href="/curtains.aspx">Curtains</a>
+                    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <a href="/accessories.aspx">Accessories</a> &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+                    <a href="/bedding.aspx">Bedding</a> 
+                    &nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp; <a href="/contactus.aspx">Contact Us</a></p>
+                <p class="text5">
+                    Copyright © 2011 LovelyCurtains. All rights reserved.</p>
+            <img src="http://www.jumpcb.com/images/images/9.gif" style="border-style:none; width:1px; height:1px;" /><img src="http://www.jumpcb.com/images/images/9.gif" style="border-style:none; width:1px; height:1px;" /><img src="http://www.jumpcb.com/images/images/9.gif" style="border-style:none; width:1px; height:1px;" /><img src="http://www.jumpcb.com/images/images/9.gif" style="border-style:none; width:1px; height:1px;" /><img src="http://www.jumpcb.com/images/images/9.gif" style="border-style:none; width:1px; height:1px;" /><img src="http://www.jumpcb.com/images/images/9.gif" style="border-style:none; width:1px; height:1px;" /><img src="http://www.jumpcb.com/images/images/9.gif" style="border-style:none; width:1px; height:1px;" /><img src="http://www.jumpcb.com/images/images/9.gif" style="border-style:none; width:1px; height:1px;" /><img src="http://www.jumpcb.com/images/images/9.gif" style="border-style:none; width:1px; height:1px;" /><img src="http://www.jumpcb.com/images/images/10.gif" style="border-style:none; width:1px; height:1px;" /></div>

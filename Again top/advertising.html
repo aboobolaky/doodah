@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset=utf-8 />
+	<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<title>Sequence Theme Demo - Modern Slide In</title>
+
+	<link rel="stylesheet" type="text/css" media="screen" href="css/advertising.css" />
+
+	<link rel='stylesheet' type='text/css' href='http://fonts.googleapis.com/css?family=Ruluko|Sirin+Stencil'>
+	
+	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+	<script type="text/javascript">
+	 if (typeof jQuery == 'undefined'){
+	    document.write(unescape("%3Cscript src='js/jquery.js' type='text/javascript'%3E%3C/script%3E"));
+	 }
+	</script>
+	<script type="text/javascript" src="js/sequence.jquery-min.js"></script>
+	<script type="text/javascript">	
+		
+		/mobile/i.test(navigator.userAgent) && !location.hash && setTimeout(function () {
+		  if (!pageYOffset) window.scrollTo(0, 1);
+		}, 1000);
+		
+		$(document).ready(function(){
+			var options = {
+				nextButton: true,
+				prevButton: true,
+				animateStartingFrameIn: true,
+				autoPlayDelay: 7000,
+				preloader: true,
+				preloadTheseFrames: [1],
+				pauseOnHover: false,
+			
+			};
+			
+			var sequence = $("#sequence").sequence(options).data("sequence");
+
+			sequence.afterLoaded = function(){
+				$("#nav").fadeIn(100);
+				$("#nav li:nth-child("+(sequence.settings.startingFrameID)+") img").addClass("active");
+			}
+
+			sequence.beforeNextFrameAnimatesIn = function(){
+				$("#nav li:not(:nth-child("+(sequence.nextFrameID)+")) img").removeClass("active");
+				$("#nav li:nth-child("+(sequence.nextFrameID)+") img").addClass("active");
+			}
+			
+			$("#nav li").click(function(){
+				$(this).children("img").removeClass("active").children("img").addClass("active");
+				sequence.nextFrameID = $(this).index()+1;
+				sequence.goTo(sequence.nextFrameID);
+			});
+		});
+	</script>
+	<script type="text/javascript">
+	  var _gaq = _gaq || [];
+	  _gaq.push(['_setAccount', 'UA-11991680-3']);
+	  _gaq.push(['_trackPageview']);
+	
+	  (function() {
+	    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+	    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+	    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+	  })();
+	</script>
+</head>
+<body>
+	<div id="header-container"> 
+		<div id="header">
+		
+				
+			<div id="sequence">
+				<ul>
+				
+					<li id="ADVERT">
+						<h2 class="title">Residence VillaJoie</h2>
+						<h3 class="subtitle">Project Launch</h3>
+						<img class="portrait" src="images/cushions.jpg" alt="Ad 2" />
+					</li>
+			<li id="ADVERT" >
+						<h2 class="title">EBENE JUNCTION</h2>
+						<h3 class="subtitle">Press Advert</h3>
+						<img class="portrait" src="images/curtains.jpg" alt="Ad 3" />
+					</li>
+                    <li id="ADVERT">
+						<h2 class="title">FLACQ SHOPPING MALL</h2>
+						<h3 class="subtitle">Samsung Tour 2012</h3>
+						<img class="portrait" src="images/bedding.jpg" alt="Ad 4" />
+					</li>
+                    <li id="ADVERT">
+						<h2 class="title">MILKY LANE</h2>
+						<h3 class="subtitle">Banner</h3>
+						<img class="portrait" src="images/acce.jpg" alt="Ad 5" />
+					</li>
+				</ul>
+			</div
+			
+				><ul id="nav">
+			
+			<li><p>•</p></li>
+			<li><p>•</p></li>
+            <li><p>•</p></li>
+            <li><p>•</p></li>
+			</ul>
+	
+    </div>
+</div>
+</body>
+</html>

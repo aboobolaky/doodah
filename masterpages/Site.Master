@@ -1,0 +1,58 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="LovelyCurtains.Web.masterpages.Site" %>
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <title></title>
+    <link href="/css/default.css" rel="stylesheet" type="text/css" />
+    <link href="/css/layout.css" rel="stylesheet" type="text/css" />
+    <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.4.4/jquery.min.js" type="text/javascript"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+    <div id="wrapper" class="bg2">
+        <div id="outer">
+            <div id="header">
+                <div id="logo">
+                <a href="/" title="Home">
+                    <h1 > Lovely Curtains
+                    </h1>
+                </a>
+                </div>
+             
+                <div id="socialMedia">
+                    <div id="facebook">
+                        <a href="/" title="Find us on Facebook">
+                            <span>
+                                Find us on Facebook</span>
+                        </a>
+                    </div>
+                  
+                </div>
+            </div>
+            <div id="content" class="bg3">
+                <div class="bg5">
+                    <div id="left">
+                        <LC:Menu ID="menu" runat="server" />
+                        <LC:Promo ID="promo" runat="server" />
+                    </div>
+                    <div id="right" class="bg6">
+                        <asp:ContentPlaceHolder ID="cplTop" runat="server">
+                        </asp:ContentPlaceHolder>
+                        <div id="pageContent">
+                            <asp:ContentPlaceHolder ID="cplPageContent" runat="server">
+                            </asp:ContentPlaceHolder>
+                        </div>
+                    </div>
+                    <div style="clear: both; height: 45px;">
+                        &nbsp;</div>
+                </div>
+            </div>
+            <LC:Footer ID="footer" runat="server" />
+        </div>
+    </div>
+    </form>
+</body>
+</html>
